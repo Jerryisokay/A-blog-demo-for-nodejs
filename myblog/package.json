@@ -1,0 +1,18 @@
+{
+  "name": "myblog",
+  "version": "0.0.0",
+  "description": "my first blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jerry Deng",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "multer": "^1.3.0",
+    "ejs": "^2.5.6"
+  }
+}
