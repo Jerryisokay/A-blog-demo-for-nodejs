@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <style type="text/css">
@@ -9,4 +9,9 @@
     <h1><%= name.toUpperCase() %></h1>
     <p>hello, <%= name %></p>
   </body>
-</html>
+</html> -->
+
+<%- include('header') %>
+  <h1><%= name.toUpperCase() %></h1>
+  <p>hello, <%= name %></p>
+<%- include('footer') %>
