@@ -1,4 +1,4 @@
-//var sha1 = require('sha1');
+var sha1 = require('sha1');
 var express = require('express');
 var router = express.Router();
 
@@ -22,7 +22,7 @@ router.post('/', checkNotLogin, function(req, res, next) {
         return res.redirect('back');
       }
       // 检查密码是否匹配
-      if (password !== user.password) {
+      if (sha1(password) !== user.password) {
         req.flash('error', '用户名或密码错误');
         return res.redirect('back');
       }

@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-//var sha1 = require('sha1');
+var sha1 = require('sha1');
 var express = require('express');
 var router = express.Router();
 
@@ -49,7 +49,7 @@ router.post('/', checkNotLogin, function(req, res, next) {
   }
 
   // 明文密码加密
- // password = sha1(password);
+  password = sha1(password);
 
   // 待写入数据库的用户信息
   var user = {
